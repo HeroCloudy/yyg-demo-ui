@@ -1,0 +1,12 @@
+{
+  "name": "@yyg-demo-ui/foo",
+  "version": "1.0.0",
+  "description": "示例组件",
+  "author": "程序员优雅哥 youyacoder",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@yyg-demo-ui/yyg-demo-ui",
+  "version": "1.0.0",
+  "description": "组件库入口",
+  "author": "程序员优雅哥 youyacoder",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@yyg-demo-ui/foo": "workspace:^1.0.0"
+  }
+}
