@@ -1,5 +1,6 @@
 import { defineComponent } from 'vue'
 import { fooProps } from './types'
+import { testLog } from '@yyg-demo-ui/utils'
 
 const NAME = 'yyg-foo'
 
@@ -10,6 +11,7 @@ export default defineComponent({
     console.log(props, context)
     const onBtnClick = () => {
       console.log('点击按钮测试', props.msg)
+      testLog(props.msg)
     }
     return () => (
       <div class={NAME}>

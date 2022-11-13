@@ -41,6 +41,18 @@ importers:
       vite-plugin-eslint: 1.8.1_eslint@8.26.0+vite@3.2.2
       vue-tsc: 1.0.9_typescript@4.8.4
 
+  packages/foo:
+    specifiers:
+      '@yyg-demo-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@yyg-demo-ui/utils': link:../utils
+
+  packages/utils:
+    specifiers:
+      mitt: 1.1.3
+    dependencies:
+      mitt: 1.1.3
+
   packages/yyg-demo-ui:
     specifiers:
       '@yyg-demo-ui/foo': workspace:^1.0.0
@@ -2101,6 +2113,10 @@ packages:
   /minimist/1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
     dev: true
+
+  /mitt/1.1.3:
+    resolution: {integrity: sha512-mUDCnVNsAi+eD6qA0HkRkwYczbLHJ49z17BGe2PYRhZL4wpZUFZGJHU7/5tmvohoma+Hdn0Vh/oJTiPEmgSruA==}
+    dev: false
 
   /ms/2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}

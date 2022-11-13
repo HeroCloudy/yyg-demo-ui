@@ -1,15 +1,15 @@
 {
-  "name": "@yyg-demo-ui/foo",
+  "name": "@yyg-demo-ui/utils",
   "version": "1.0.0",
-  "description": "示例组件",
-  "author": "程序员优雅哥 youyacoder",
+  "description": "通用工具函数",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "@yyg-demo-ui/utils": "workspace:^1.0.0"
+    "mitt": "1.1.3"
   }
 }
