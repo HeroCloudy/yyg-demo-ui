@@ -1,0 +1,23 @@
+{
+  "name": "@yyg-demo-ui/docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  },
+  "keywords": [],
+  "author": "程序员优雅哥",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitepress-demo-preview/component": "^2.0.2",
+    "@vitepress-demo-preview/plugin": "^1.1.5",
+    "vitepress": "1.0.0-alpha.28"
+  },
+  "dependencies": {
+    "@yyg-demo-ui/yyg-demo-ui": "workspace:^1.0.0",
+    "element-plus": "^2.2.21"
+  }
+}
