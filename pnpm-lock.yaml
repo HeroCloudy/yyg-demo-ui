@@ -44,6 +44,7 @@ importers:
   cli:
     specifiers:
       '@types/inquirer': 8.2.5
+      '@types/shelljs': ^0.8.11
       chalk: 4.1.2
       commander: ^9.4.1
       inquirer: 8.2.5
@@ -53,6 +54,7 @@ importers:
       ts-node: ^10.9.1
     devDependencies:
       '@types/inquirer': 8.2.5
+      '@types/shelljs': 0.8.11
       chalk: 4.1.2
       commander: 9.4.1
       inquirer: 8.2.5
@@ -89,6 +91,12 @@ importers:
       '@vitejs/plugin-vue': 3.2.0
       typescript: 4.8.4
 
+  packages/demo-b:
+    specifiers:
+      '@yyg-demo-ui/utils': workspace:^1.0.0
+    dependencies:
+      '@yyg-demo-ui/utils': link:../utils
+
   packages/foo:
     specifiers:
       '@yyg-demo-ui/utils': workspace:^1.0.0
@@ -103,8 +111,14 @@ importers:
 
   packages/yyg-demo-ui:
     specifiers:
+      '@yyg-demo-ui/demo-a': workspace:^1.0.0
+      '@yyg-demo-ui/demo-b': workspace:^1.0.0
+      '@yyg-demo-ui/demo-c': workspace:^1.0.0
       '@yyg-demo-ui/foo': workspace:^1.0.0
     dependencies:
+      '@yyg-demo-ui/demo-a': link:../demo-a
+      '@yyg-demo-ui/demo-b': link:../demo-b
+      '@yyg-demo-ui/demo-c': link:../demo-c
       '@yyg-demo-ui/foo': link:../foo
 
 packages:
@@ -733,6 +747,13 @@ packages:
     resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
+  /@types/glob/8.0.0:
+    resolution: {integrity: sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA==}
+    dependencies:
+      '@types/minimatch': 5.1.2
+      '@types/node': 18.11.9
+    dev: true
+
   /@types/inquirer/8.2.5:
     resolution: {integrity: sha512-QXlzybid60YtAwfgG3cpykptRYUx2KomzNutMlWsQC64J/WG/gQSl+P4w7A21sGN0VIxRVava4rgnT7FQmFCdg==}
     dependencies:
@@ -757,12 +778,23 @@ packages:
     resolution: {integrity: sha512-zmEmF5OIM3rb7SbLCFYoQhO4dGt2FRM9AMkxvA3LaADOF1n8in/zGJlWji9fmafLoNyz+FoL6FE0SLtGIArD7w==}
     dev: false
 
+  /@types/minimatch/5.1.2:
+    resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
+    dev: true
+
   /@types/node/18.11.9:
     resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
   /@types/semver/7.3.13:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
+    dev: true
+
+  /@types/shelljs/0.8.11:
+    resolution: {integrity: sha512-x9yaMvEh5BEaZKeVQC4vp3l+QoFj3BXcd4aYfuKSzIIyihjdVARAadYy3SMNIz0WCCdS2vB9JL/U6GQk5PaxQw==}
+    dependencies:
+      '@types/glob': 8.0.0
+      '@types/node': 18.11.9
     dev: true
 
   /@types/through/0.0.30:
