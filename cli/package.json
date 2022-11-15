@@ -1,0 +1,19 @@
+{
+  "name": "@yyg-demo-ui/cli",
+  "version": "1.0.0",
+  "description": "命令行工具",
+  "author": "程序员优雅哥",
+  "license": "ISC",
+  "scripts": {
+    "gen": "ts-node ./index.ts create"
+  },
+  "devDependencies": {
+    "chalk": "4.1.2",
+    "commander": "^9.4.1",
+    "inquirer": "8.2.5",
+    "log-symbols": "4.1.0",
+    "ora": "5.4.1",
+    "shelljs": "^0.8.5",
+    "ts-node": "^10.9.1"
+  }
+}
