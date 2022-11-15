@@ -8,6 +8,7 @@
     "gen": "ts-node ./index.ts create"
   },
   "devDependencies": {
+    "@types/inquirer": "8.2.5",
     "chalk": "4.1.2",
     "commander": "^9.4.1",
     "inquirer": "8.2.5",
