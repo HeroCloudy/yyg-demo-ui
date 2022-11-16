@@ -5,11 +5,15 @@
   "author": "程序员优雅哥 youyacoder",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf ../../lib && vue-tsc --noEmit && vite build"
   },
   "keywords": [],
   "license": "ISC",
   "dependencies": {
     "@yyg-demo-ui/foo": "workspace:^1.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "vite-plugin-dts": "^1.7.1"
   }
 }
