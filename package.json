@@ -36,7 +36,7 @@
     "lint": "eslint \"{cli,packages,docs,example}/**/*.{js,ts,vue,jsx,tsx}\" --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "程序员优雅哥",
   "license": "ISC",
   "workspaces": [
     "packages/*",
